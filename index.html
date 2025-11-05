@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mami🤍Papatya</title>
+<style>
+body {
+  margin: 0;
+  font-family: "Brush Script MT", cursive;
+  background: linear-gradient(180deg, #ffd6e8, #ffeaf4);
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* Kalpler */
+.heart {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background: pink;
+  transform: rotate(45deg);
+  animation: float 8s linear infinite;
+  opacity: 0.6;
+}
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: pink;
+  border-radius: 50%;
+}
+.heart::before { top: -7px; left: 0; }
+.heart::after { left: -7px; top: 0; }
+
+@keyframes float {
+  0% { transform: translateY(100vh) rotate(45deg); opacity: 0.6; }
+  100% { transform: translateY(-10vh) rotate(45deg); opacity: 0; }
+}
+
+/* Metinler */
+h1 {
+  color: #ff7fa8;
+  font-size: 2.2em;
+  margin-top: 2em;
+}
+h2 {
+  color: #ff5599;
+  font-size: 1.5em;
+}
+button {
+  background-color: #ffb6d5;
+  border: none;
