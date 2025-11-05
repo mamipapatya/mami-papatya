@@ -53,3 +53,102 @@ h2 {
 button {
   background-color: #ffb6d5;
   border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 1em;
+}
+button:hover { background-color: #ff89ba; }
+
+/* Fotoğraf kısmı */
+#gallery {
+  display: none;
+  margin-top: 2em;
+}
+.photo {
+  margin: 1.5em auto;
+}
+.photo img {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ffa4c1;
+}
+.note {
+  font-size: 1em;
+  color: #ff5599;
+  margin-top: 0.5em;
+}
+
+/* Alt not */
+footer {
+  margin-top: 3em;
+  font-size: 1.1em;
+  color: #ff77aa;
+  font-weight: bold;
+}
+small {
+  display: block;
+  font-size: 0.9em;
+  color: #ff99bb;
+  margin-top: 0.5em;
+}
+</style>
+</head>
+<body>
+
+<h1>Prensesimmm 6. Ayımız kutlu olsun 💗</h1>
+<h2>Sevgilim bu 6 ay bir ömür olsun güzelimm 💞</h2>
+
+<a href="https://open.spotify.com/track/1kIdc7DbStO2Qk1GQ5q3N8" target="_blank">🎵 Yaşar - Divane</a>
+<br>
+<button onclick="showGallery()">Fotoğraflarımıza git 💕</button>
+
+<div id="gallery">
+  <div class="photo">
+    <img src="IMG_0978.jpeg" alt="foto1">
+    <p class="note">İlk konuşmaya başladığımız zaman ki fotoğraflarımız 💞</p>
+  </div>
+  <div class="photo">
+    <img src="IMG_0830.jpeg" alt="foto2">
+    <p class="note">İlk konuşmaya başladığımız zaman ki fotoğraflarımız 💞</p>
+  </div>
+  <div class="photo">
+    <img src="IMG_1118.jpeg" alt="foto3">
+    <p class="note">İlk buluştuğumuzda çekmiştim, çok tatlı çıkmıştın 💗</p>
+  </div>
+  <div class="photo">
+    <img src="IMG_1312.png" alt="foto4">
+    <p class="note">Küçüklük fotoğraflarımızı birleştirmiştik 🥹</p>
+  </div>
+</div>
+
+<footer>
+  Seni çook seviyorummmmmm prensesimmm 💗  
+  <small>♾️ 31.05.2025 – Mami🤍Papatya</small>
+</footer>
+
+<script>
+// Fotoğraf galerisini açma
+function showGallery() {
+  document.getElementById("gallery").style.display = "block";
+  window.scrollTo(0, document.body.scrollHeight);
+}
+
+// Kalp animasyonları
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = 5 + Math.random() * 5 + "s";
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 10000);
+}
+setInterval(createHeart, 400);
+</script>
+
+</body>
+</html>
+
